@@ -1,0 +1,247 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    color: #eeeeee;
+    margin: 0 0 0;
+    margin-bottom: 20px;
+    background: #60739E;
+    font-family: "Didact Gothic", sans-serif;
+    font-weight: 500;
+    place-items: center;
+}
+
+h1{
+    font-family: "Didact Gothic", sans-serif;
+    font-size: 50px;
+    color: #eeeeee;
+}
+
+h2 {
+    font-family: "GFS Didot", serif;
+    font-size: 40px;
+    color: #eeeeee;
+}
+
+h3{
+    font-family: "Didact Gothic", sans-serif;
+    font-size: 25px;
+    color: #eeeeee;
+}
+
+h4{
+    font-family: "Didact Gothic", sans-serif;
+    font-size: 30px;
+    color: #eeeeee
+}
+
+p {
+    font-family: "Didact Gothic", sans-serif;
+    font-size: 18px;
+    color: #eeeeee;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background: #FDFAFF;
+    width: 100%;
+}
+
+header::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+.logo {
+    float: left;
+    
+    object-fit: scale-down;
+    width: 50px;
+    height: 50px;
+}
+
+nav {
+    float: right;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li{
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 23px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+nav a{
+    color: #3a3a3a;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+nav a:hover{
+    color: #000000;
+}
+
+nav a::before{
+    content: '';
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: #60739E;
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before{
+    width: 100%;
+}
+
+.column{
+    float: left;
+    width: 50%;
+    object-fit: contain;
+}
+
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.photo{
+    float: right;
+    padding: 10px 0;
+    object-fit: contain;
+    width: 500px;
+    height: 400px;
+}
+
+.margins{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.cutlogo{
+    object-fit: cover;
+    width: 500px;
+    height: 100%;
+    display: flex;
+}
+
+.homebody{
+    padding-top: 100px;
+}
+
+.resumepic{
+    display: flex;
+    float: right;
+}
+
+.resume-holder{
+    width: 66%;
+    float: left;
+}
+
+.button-holder{
+    width: 30%;
+    float: left;
+    margin-left: 3%;
+}
+
+.button{
+    background-color: white;
+    border: none;
+    font-size: 16px;
+    color: #3a3a3a;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    float: left;
+}
+
+.card {
+    box-shadow: 0 0 20px #000000;
+    max-width: 450px;
+    max-height: 50%;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    color: #60739E;
+    text-align: center;
+    padding: 20px;
+    object-fit: contain;
+    margin-left: 10%;
+}
+
+.card-image{
+    border-radius: 50%;
+    border: 5px solid #60739E;
+    max-width: 150px;
+    max-height: 150px;
+    object-fit: cover;
+    margin-top: 10px;
+    margin-right: 20px;
+    
+}
+.social-icon-list{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    object-fit: contain;
+    float: none;
+    text-align: left;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.icon-link{
+    color: #60739E;
+    opacity: 80%;
+    text-decoration: none;
+}
+
+.icon-link:hover,
+.icon-link:focus{
+    opacity: 100%;
+}
+
+
+#card-name{
+    font-family: "Didact Gothic", sans-serif;
+    font-size: 25px;
+    color: #60739E;
+    margin-bottom: 0;
+}
+
+#card-major{
+    font-family: "Didact Gothic", sans-serif;
+    font-size: 15px;
+    color: #60739E;
+    margin-top: 0;
+}
+
+#card-column{
+    width: calc(99%/2);
+    object-fit: contain;
+}
+
+.row{
+    width: 100%;
+
+}
+
+#endofabout{
+    font-weight:bold;
+}
